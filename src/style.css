@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Teko&display=swap');
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* for navbar */
+nav {
+  height: 120px;
+  background-color: rgb(165, 99, 49);
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 4vw;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.linkbar {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-size: 1.8rem;
+  margin-right: 4vw;
+}
+
+.linkbar a {
+  cursor: pointer;
+  color: white;
+}
+
+/*  container for pages*/
+
+#container {
+  height: 100%;
+  background-color: #7dbaff;
+}
+
+/* for home page */
+
+#homepage {
+  animation: fadeIn 2s;
+  height: calc(100vh - 120px);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.leftside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 8vw;
+  height: 100%;
+  color: white;
+  font-size: 5rem;
+}
+
+.leftside span:last-child {
+  color: rgb(165, 99, 49);
+  font-size: 10rem;
+}
+
+/* form menu page */
+
+#menupage {
+  height: 100%;
+}
+
+#firstpage,
+#secondpage {
+  height: calc(100vh - 120px);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  animation: fadeIn 2s;
+}
+
+h1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 4vw;
+  height: 100%;
+  color: white;
+  font-size: 5rem;
+}
+
+#secondpage h1 {
+  color:rgb(165, 99, 49) ;
+}
+
+
+
+
