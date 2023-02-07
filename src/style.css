@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Teko&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Teko&display=swap");
 
 html,
 body {
@@ -14,6 +14,20 @@ body {
     opacity: 1;
   }
 }
+/* for scroll bar  */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(242, 192, 120);
+  outline: 1px solid slategrey;
+}
+
 #content {
   height: 100%;
   display: flex;
@@ -21,14 +35,15 @@ body {
 }
 /* for navbar */
 nav {
+  position: sticky;
+  top: 0;
+
   height: 120px;
   background-color: rgb(165, 99, 49);
   display: flex;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
 
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .logo {
@@ -66,12 +81,11 @@ nav {
 #homepage {
   animation: fadeIn 2s;
   background: url("../pic/home.jpg");
-  
+
   height: calc(100vh - 120px);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 .leftside {
@@ -99,7 +113,7 @@ nav {
   background: url(../pic/samosa.jpg);
 }
 
-#secondpage{
+#secondpage {
   background: url(../pic/curry.jpg);
 }
 
@@ -113,7 +127,7 @@ nav {
   animation: fadeIn 2s;
 }
 
-h1{
+h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,9 +138,5 @@ h1{
 }
 
 #secondpage h1 {
-  color:rgb(165, 99, 49) ;
+  color: rgb(165, 99, 49);
 }
-
-
-
-
