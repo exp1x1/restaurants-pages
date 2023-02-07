@@ -1,5 +1,8 @@
 import "./reset.css";
 import "./style.css";
+import logo from "../pic/kop-logo.png";
+
+
 
 const addChild = (node, element, className = "", textContent = "") => {
   const nodeEle = document.querySelector(node);
@@ -30,7 +33,7 @@ const navBar = (() => {
   const createLogo = () => {
     addChild("nav", "a", "logo");
     const node = addChild(".logo", "img", "logo-img");
-    node.src = "../pic/kop-logo.png";
+    node.src = logo;
   };
 
   const createLinkBar = () => {
@@ -58,7 +61,7 @@ const navBar = (() => {
 const homePage = (() => {
   const createHomeContainer = () => {
     const node = addChild("#container", "div", "#homepage");
-    node.style.backgroundImage = "url(../pic/home.jpg)";
+    // node.style.backgroundImage = "url(../pic/home.jpg)";
   };
 
   const createLeftSide = () => {
@@ -87,14 +90,14 @@ const menuPage = (() => {
 
   const createFirstPage = () => {
     const node = addChild("#menupage", "div", "#firstpage");
-    node.style.backgroundImage = "url(../pic/samosa.jpg)";
+    // node.style.backgroundImage = "url(../pic/samosa.jpg)";
 
     addChild("#firstpage", "h1", "", "SAMOSA");
   };
 
   const createSecondPage = () => {
     const node = addChild("#menupage", "div", "#secondpage");
-    node.style.backgroundImage = "url(../pic/curry.jpg)";
+    // node.style.backgroundImage = "url(../pic/curry.jpg)";
 
     addChild("#secondpage", "h1", "", "CURRY");
   };

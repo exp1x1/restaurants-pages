@@ -65,10 +65,13 @@ nav {
 
 #homepage {
   animation: fadeIn 2s;
+  background: url("../pic/home.jpg");
+  
   height: calc(100vh - 120px);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 
 .leftside {
@@ -90,6 +93,14 @@ nav {
 
 #menupage {
   height: 100%;
+}
+
+#firstpage {
+  background: url(../pic/samosa.jpg);
+}
+
+#secondpage{
+  background: url(../pic/curry.jpg);
 }
 
 #firstpage,
